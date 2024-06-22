@@ -8,18 +8,20 @@
         Title="MainWindow" Height="450" Width="650">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" /> 
-        </Grid.RowDefinitions>
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" /> 
+                <RowDefinition Height="*" /> 
+            </Grid.RowDefinitions>
+            
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             
-            <mealAInstructor:UserInputView></mealAInstructor:UserInputView>
-            
+            <mealAInstructor:UserInputView Grid.ColumnSpan="3"></mealAInstructor:UserInputView>
+            <mealAInstructor:ResponseView Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="1"></mealAInstructor:ResponseView>
         </Grid>
     </Grid>
 </Window>

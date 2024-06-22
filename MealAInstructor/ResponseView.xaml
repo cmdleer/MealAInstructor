@@ -8,5 +8,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         
+        <TextBox Margin="10" Background="Gainsboro"></TextBox>
+        
     </Grid>
 </UserControl>
