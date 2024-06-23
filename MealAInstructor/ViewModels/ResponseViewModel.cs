@@ -1,6 +1,6 @@
 ﻿namespace MealAInstructor.ViewModels;
 
-public class ResponseViewModel
+public class ResponseViewModel : ViewModelBase
 {
     
 }

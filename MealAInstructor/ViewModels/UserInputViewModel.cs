@@ -1,6 +1,6 @@
 ﻿namespace MealAInstructor.ViewModels;
 
-public class UserInputViewModel
+public class UserInputViewModel : ViewModelBase
 {
     
 }
