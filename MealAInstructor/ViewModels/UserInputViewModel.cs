@@ -13,7 +13,7 @@ public class UserInputViewModel : ViewModelBase
         {
             if (value == _ingredient) return;
             _ingredient = value;
-            OnPropertyChanged();
+            OnPropertyChanged(nameof(_ingredient));
         }
     }
 
@@ -24,7 +24,7 @@ public class UserInputViewModel : ViewModelBase
         {
             if (value == _difficulty) return;
             _difficulty = value;
-            OnPropertyChanged();
+            OnPropertyChanged(nameof(_difficulty));
         }
     }
 
@@ -35,7 +35,7 @@ public class UserInputViewModel : ViewModelBase
         {
             if (value == _portions) return;
             _portions = value;
-            OnPropertyChanged();
+            OnPropertyChanged(nameof(_portions));
         }
     }
 }
