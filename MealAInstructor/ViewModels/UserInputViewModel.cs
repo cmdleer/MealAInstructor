@@ -1,4 +1,7 @@
-﻿namespace MealAInstructor.ViewModels;
+﻿using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
+
+namespace MealAInstructor.ViewModels;
 
 public class UserInputViewModel : ViewModelBase
 {
@@ -37,5 +40,28 @@ public class UserInputViewModel : ViewModelBase
             _portions = value;
             OnPropertyChanged(nameof(_portions));
         }
+    }
+
+    public string AddedIngredients
+    {
+        get => _addedIngredients;
+        set
+        {
+            if (value == _addedIngredients) return;
+            _addedIngredients = value;
+            OnPropertyChanged(nameof(_addedIngredients));
+        }
+    }
+    
+    public ICommand EnterCommand { get; set; }
+
+    public UserInputViewModel()
+    {
+        EnterCommand = new RelayCommand(OnEnter);
+    }
+
+    private void OnEnter()
+    {
+        
     }
 }
