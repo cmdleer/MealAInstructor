@@ -5,8 +5,9 @@ namespace MealAInstructor.ViewModels;
 
 public class UserInputViewModel : ViewModelBase
 {
-    private string _ingredient;
-    private string _difficulty;
+    private string _ingredient = null!;
+    private string _difficulty = null!;
+    private string _addedIngredients = null!;
     private int _portions;
 
     public string Ingredient
