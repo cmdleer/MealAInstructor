@@ -8,6 +8,8 @@ public class UserInputViewModel : ViewModelBase
 {
     private static readonly HttpClient client = new HttpClient();
     
+    
+    
     public string Ingredient { get; set; }
     public string Difficulty { get; set; }
     public string AddedIngredients { get; set; }
